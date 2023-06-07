@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Plugins.Editor.OverrideEditors
 {
-	//[CustomEditor(typeof(TargetType))]
+	//[CustomEditor(typeof(TargetType)),CanEditMultipleObjects]
 	public abstract class CustomOverrideEditor : UnityEditor.Editor
 	{
 		protected abstract string DefaultEditorTypeName { get; } // => "UnityEditor.TargetTypeEditor";
